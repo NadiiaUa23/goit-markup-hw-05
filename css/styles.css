@@ -648,10 +648,9 @@ padding: 8px 16px;
 
 }
 .footer-form-btn {
-    padding:  24px;
     height: 40px;
-    flex-shrink: 0;
     border: none;
+    flex-direction: column;
 }
 
 .ftr-airpl {
