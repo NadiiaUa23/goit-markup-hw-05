@@ -617,6 +617,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .footer-form {
     display: block;
@@ -632,7 +633,7 @@ margin-bottom: 16px;
 }
 
 .footer-form-email {
-margin-right: 24px;
+
 }
 
 
@@ -659,7 +660,7 @@ padding: 8px 16px;
       border: none;
     cursor: pointer;
 background: var(--iris, #4D5AE5);
-align-self: flex-end;
+
 }
 
 .airpl-text {
