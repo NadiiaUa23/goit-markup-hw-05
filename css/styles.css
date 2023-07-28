@@ -613,17 +613,18 @@ header {
 
 
 /* forma email */
-.footer-bottom {
+.footer-form {
+   
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
-.footer-form {
-    display: block;
+
+.footer-bottom {
+
 }
+
 .footer-name {
-   
     color:  #FFF;
 font-size: 16px;
 font-weight: 500;
@@ -635,7 +636,6 @@ margin-bottom: 16px;
 .footer-form-email {
 
 }
-
 
 .footer-input {
     width: 264px;
@@ -673,8 +673,6 @@ background: var(--iris, #4D5AE5);
 }
 
 .ftr-airpl {
-
-
 }
 .airpl-icon {
 }
