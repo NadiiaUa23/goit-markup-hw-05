@@ -466,31 +466,24 @@
                 </p>
                 <form class="footer-form">
                     <label class="footer-form-email">
-
                         <input tupe="email" name="user-email" class="footer-input" placeholder="E-mail" />
                     </label>
                     <button type="submit" class="footer-form-btn">
-
                         <span class="airpl-text">Subscribe</span>
-
-                     
-                            <svg class="airpl-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-airpl"></use>
-                            </svg>
-                        
+                        <svg class="airpl-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-airpl"></use>
+                        </svg>
                     </button>
-
                 </form>
             </div>
-
         </div>
 
     </footer>
 
 
     <div data-modal class="backdrop is-hidden">
-        <div class="modal">
 
+        <div class="modal">
             <!-- кнопка закрити -->
             <button type="button" class="button-close" data-modal-close>
                 <svg class="close" width="8" height="8">
@@ -501,81 +494,84 @@
             <p class="modal-title">
                 Leave your contacts and we will call you back
             </p>
+
             <form class="modal-form">
-                <label for="user-neme" class="modal-item">
-                    <span class="input-label-text">Name</span>
+                <div class="modal-cub">
+                    <label class="modal-item" for="user-name">
+                        Name
+                    </label>
                     <div class="input-wrap">
-                        <input type="text" name="user-neme" id="user-neme" class="modal-input" required />
-                        <svg class="modal-input-icon" width="18" height="18">
+                        <input type="text" id="user-name" name="user-name" class="modal-input" />
+                        <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person">
                             </use>
                         </svg>
                     </div>
-                </label>
+                </div>
 
-                <label for="user-phone" class="modal-item">
-                    <span class="input-label-text">Phone</span>
+                <div class="modal-cub">
+                    <label class="modal-item" for="user-phone">
+                        Phone
+                    </label>
                     <div class="input-wrap">
-                        <input type="tel" name="user-phone" id="user-phone" class="modal-input" required maxlength="12"
-                            minlength="10" />
+                        <input type="text" id="user-phone" name="user-phone" class="modal-input" />
                         <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone">
                             </use>
                         </svg>
                     </div>
-                </label>
-                <label for="user-email" class="modal-item">
-                    <span class="input-label-text">Email</span>
+                </div>
+                <div class="modal-cub">
+                    <label class="modal-item" for="user-email">
+                        Email
+                    </label>
                     <div class="input-wrap">
-                        <input type="email" name="user-email" id="user-email" class="modal-input" required />
+                        <input type="text" id="user-email" name="user-email" class="modal-input" />
                         <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email">
                             </use>
                         </svg>
                     </div>
-                </label>
-                <div class="input-wrap">
-                    <label for="user-text" class="modal-item"></label>
-                    <span class="input-label-text">
-                        Comment
-                    </span>
-                    <textarea name="user-text" id="user-text" class="modal-text-area"
-                        placeholder="Text input"></textarea>
                 </div>
 
+                <div class="modal-cub-coment">
+                    <label class="modal-item" for="user-comment">
+                        Comment
+                    </label>
+                    <div class="input-wrap">
+                        <textarea name="user-comment" id="user-comment" class="modal-text-area"
+                            placeholder="Text input"></textarea>
+                    </div>
+                </div>
 
+                <div class="modal-cub-cnopka">
 
+                    <input type="checkbox" name="user-accept" id="user-accept" class="modal-check visually-hidden" />
 
-                <input type="checkbox" name="user-accept" id="user-accept" class="modal-check visually-hidden" />
-
-                <label for="user-accept" class="check-text">
-                    <span>
-                        <svg class="accept-ok" width="10" height="10">
-                            <use href="./images/icons.svg#icon-ok"></use>
-                        </svg>
-                    </span>
-                    I accept the terms and
-                    conditions of the
-                    <a href="" class="accent-link">
-                        Privacy Policy
-                    </a>
-                </label>
-
-
-
+                    <label for="user-accept" class="check-text">
+                        <span>
+                            <svg class="accept-ok" width="10" height="10">
+                                <use href="./images/icons.svg#icon-ok"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and
+                        conditions of the
+                        <a href="" class="accent-link">
+                            Privacy Policy
+                        </a>
+                    </label>
+                </div>
 
                 <div class="button-send">
                     <button type="submit" class="button-modal">
                         Send
                     </button>
                 </div>
+
             </form>
         </div>
 
-    </div>
-
-
-    <script src="./js/modal.js"></script>
+        <script src="./js/modal.js"></script>
 
 </body>
 
