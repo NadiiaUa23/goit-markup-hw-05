@@ -1008,9 +1008,6 @@ header {
     font-size: 12px; 
     line-height: 1.17;
     letter-spacing: 0.04em;
- 
- 
-
 }
 
 .privacy-cnopka:checked + .check-text .accept-ok {
@@ -1059,7 +1056,7 @@ input:checked + .modal-cnopka span {
 
 
 .button-modal {
-    max-width: 169px;
+    min-width: 169px;
       height: 56px;
     display: block;
     font-family: "Roboto", sans-serif;
