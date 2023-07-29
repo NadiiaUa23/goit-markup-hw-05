@@ -985,14 +985,33 @@ header {
 .modal-cub-cnopka {
     margin-bottom: 24px;
 }
+.modal-check:checked +.check-text span {
+    fill: #F4F4FD;
+    background-color: #404BBF;
+    border: none;
+}
+
+.modal-check:focus +.check-text span {
+    border-color: #404BBF;
+}
+
+
+.check-text {
+    color: var(--lightslate, #8E8F99);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    display: flex;
+    margin-bottom: 24px;
+}
  
 .check-text span {
     font-size: 12px; 
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color:#8e8f99; 
+ 
     display: flex; 
-    align-items: center; 
+
 }
 
 .privacy-cnopka:checked + .check-text .accept-ok {
@@ -1015,40 +1034,21 @@ header {
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
-    color: #F4F4FD;
+   
 
 }
 .accept-icon {
-    
+    fill: #F4F4FD;
 }
 
 input:checked + .modal-cnopka span {
     background-color: #404bbf;
-    fill:#F4F4FD;
+    
     border: none;
   }
 
- .accent-link {
-    color:#4d5ae5;
- }
-
-/* предидущийвариант */
-
-.check-text {
-    color: var(--lightslate, #8E8F99);
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    display: flex;
-    margin-bottom: 24px;
-}
-
-.accept-ok {
-    
-}
-
-.accent-link {
-    color: var(--iris, #4D5AE5);
+  .accent-link {
+    color: #4D5AE5;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -1056,31 +1056,7 @@ input:checked + .modal-cnopka span {
     padding-left: 3px;
 }
 
-.check-text span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-    margin-right: 8px;
-    fill: #F4F4FD;
-}
 
-.modal-check:checked +.check-text span {
-    fill: #F4F4FD;
-    background-color: #404BBF;
-    border: none;
-}
-
-.modal-check:focus +.check-text span {
-    border-color: #404BBF;
-}
-
-.button-send {
- 
-}
 
 .button-modal {
     width: 100%;
