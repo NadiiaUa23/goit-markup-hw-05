@@ -213,43 +213,35 @@ header {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-  /* padding: 188px 0;
-  max-width: 1440px; */
+  
   background-color: var(--hero-background);
-  height: 600px;
+  
+  width: 428px;
+  height: 432px;
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* фон по центру секции? */
   margin: 0 auto;
+
 }
 
-.hero-container {}
+.hero-container {
+  padding: 112px 54px;
+}
 
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  /*111.11%; 40/36 */
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /* max-width: 496px; */
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
-}
-
-.hero-button {
-  color: #ffffff;
-  background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 72px;
 }
 
 .button {
@@ -264,6 +256,20 @@ header {
   /* 150% */
   letter-spacing: 0.04em;
 }
+
+.hero-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 /* какая красивая кнопочка)):) */
 .hero-button {
@@ -293,13 +299,13 @@ header {
 
 .solutions-container {}
 
-.solutions-list{
+.solutions-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.feature-item{
+.feature-item {
   margin-bottom: 72px;
 }
 
@@ -319,7 +325,7 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
- justify-content: center;
+  justify-content: center;
 }
 
 .feature-text {
@@ -346,6 +352,7 @@ header {
 /*__////////////////////////////////////////секция 3////////////////////////////////////////__*/
 .what {
   background: #fff;
+
   padding-bottom: 120px;
 }
 
@@ -1063,48 +1070,68 @@ input:checked+.modal-cnopka span {
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 112px 136px;
+  }
 
+  .hero-section {
+    width: 768px;
+    height: 436px;
+    flex-shrink: 0;
+  }
 
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    /* 60/56 */
+    margin-bottom: 36px;
 
+  }
 
+}
 
+@media screen and (min-width: 1200px) {
 
+  .hero-section {
+  width: 1440px;
+    height: 600px; 
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 48px;
+  
+  }
 
-
-
-
-
-
-
+}
 
 @media screen and (min-width: 768px) {
   .solutions-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-   
-   
-
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .solutions-list{
+  .solutions-list {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
   }
 }
 
-@media screen and (min-width: 768px){
-.feature-item{
-  width: calc((100% - 24px) / 2);
+@media screen and (min-width: 768px) {
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
-}
-
-
-
 
 
 @media screen and (min-width: 1200px) {
@@ -1125,17 +1152,15 @@ input:checked+.modal-cnopka span {
   }
 }
 
-@media screen (max-width: 667px){
+@media screen (max-width: 667px) {
   .feature-item:not(:last-child) {
     margin-bottom: 72px;
   }
-  
-  }
+}
 
 @media screen and (min-width: 1200px) {
   .feature-subtitle {
     display: flex;
-
     font-size: 20px;
     font-weight: 500;
   }
@@ -1174,11 +1199,11 @@ input:checked+.modal-cnopka span {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .team-item:not(:last-child) {
     margin-bottom: 72px;
   }
-  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cust-container {
